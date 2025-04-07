@@ -1,0 +1,13 @@
+[build]
+  # Command to build the site
+  command = "npm run build"
+  
+  # Directory containing the deploy-ready assets, relative to the base directory
+  publish = "build/client"
+
+[functions]
+  # Directory containing serverless functions, relative to the base directory
+  # Remix typically puts the server build here when using the Netlify adapter,
+  # but even without the adapter, this tells Netlify where server logic might be.
+  # Adjust if needed based on specific Remix adapter setup for Netlify.
+  directory = "build/server"
